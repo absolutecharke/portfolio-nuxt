@@ -85,35 +85,32 @@ onBeforeUnmount(() => {
   <Teleport to="body">
     <template v-if="selectedCert">
       <div
-        class="certificate-modal"
+        class="modal modal-open certificate-modal"
         tabindex="-1"
         role="dialog"
         aria-modal="true"
         @click.self="closeCert"
       >
-        <div class="certificate-modal-dialog">
-          <div class="certificate-modal-content">
-            <div class="certificate-modal-header">
-              <button
-                type="button"
-                class="certificate-modal-close"
-                aria-label="Close"
-                @click="closeCert"
-              >
-                &times;
-              </button>
-            </div>
-            <div class="certificate-modal-body">
-              <img
-                :src="selectedCert.certificate"
-                :alt="selectedCert.certificateAlt"
-                class="certificate-modal-image"
-              />
-            </div>
+        <div class="modal-box certificate-modal-content">
+          <div class="certificate-modal-header">
+            <button
+              type="button"
+              class="btn btn-sm btn-square certificate-modal-close"
+              aria-label="Close"
+              @click="closeCert"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="certificate-modal-body">
+            <img
+              :src="selectedCert.certificate"
+              :alt="selectedCert.certificateAlt"
+              class="certificate-modal-image"
+            />
           </div>
         </div>
       </div>
-      <div class="certificate-modal-backdrop"></div>
     </template>
   </Teleport>
 </template>
