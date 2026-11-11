@@ -1,5 +1,14 @@
 <script setup>
-useHead({ title: 'About | Portfolio' })
+import { useSeoMeta } from '#imports' 
+
+useSeoMeta({
+  title: 'About Me - Charles Pineda | IT Portfolio',
+  description: 'Learn more about Charles Pineda, an IT student passionate about cybersecurity, database management, and game development.',
+  
+  ogTitle: 'About Charles Pineda - IT Student & Aspiring Developer',
+  ogDescription: 'Discover Charles Pineda background, hobbies like reading comics and running, and career aspirations in cybersecurity and game dev.',
+  ogType: 'website',
+})
 </script>
 
 <template>

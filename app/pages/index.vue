@@ -1,6 +1,19 @@
 <script setup>
-// Rename your photo to something simple (no spaces/parentheses) and put it in src/assets
+import { ref } from 'vue'
+import { useSeoMeta } from '#imports' 
 import profilePhoto from '@/assets/dsadds.jpg'
+
+useSeoMeta({
+  title: 'Home - Charles Pineda | IT Portfolio',
+  description: 'Portfolio of Charles Pineda, a passionate 2nd year IT student with a strong foundation in web development and software engineering.',
+  
+  
+  ogTitle: 'Charles Pineda - BSIT Portfolio',
+  ogDescription: 'Explore the portfolio and short intro of Charles Pineda, a 2nd year IT student specializing in web development.',
+  ogImage: profilePhoto,
+  ogType: 'profile',
+})
+
 </script>
 
 <template>

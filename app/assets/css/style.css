@@ -8,6 +8,7 @@ html,
 body {
   width: 100%;
   min-height: 100%;
+  background-color: #2a3527; 
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -28,7 +29,7 @@ body > * {
 }
 
 :root {
-  --bg: #f5f2ee;
+  --bg: #ffffff;
   --ink: #1a1a18;
   --accent: #c8f04a;
   --accent2: #ff6b35;
@@ -38,9 +39,6 @@ body > * {
   --shadow: 5px 5px 0px #1a1a18;
 }
 
-/* =====================
-   COMIC BG
-===================== */
 .comic-bg {
   position: fixed;
   top: 0;
@@ -531,7 +529,7 @@ nav a.active::after { display: none; }
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
-  background: rgb(13 11 26 / 80%);
+  background: transparent;
 }
 
 .certificate-modal-dialog {
@@ -587,7 +585,7 @@ nav a.active::after { display: none; }
   position: fixed;
   inset: 0;
   z-index: 1090;
-  background: #0d0b1a;
+  background: rgb(13 11 26 / 60%);
 }
 
 body.modal-open {

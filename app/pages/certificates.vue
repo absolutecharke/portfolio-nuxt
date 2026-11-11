@@ -1,6 +1,16 @@
 <script setup>
-useHead({ title: 'Certifications | Portfolio' })
-// Images in public/images are served from /images.
+import { ref, watch, onMounted, onBeforeUnmount } from 'vue'
+import { useSeoMeta } from '#imports'
+
+useSeoMeta({
+  title: 'Certifications - Charles Pineda | IT Portfolio',
+  description: 'View professional certifications earned by Charles Pineda, including Python Essentials and Networking Basics from Cisco Networking Academy.',
+  
+  ogTitle: 'Professional Certifications - Charles Pineda | Portfolio',
+  ogDescription: 'Explore verified IT certifications from Cisco Networking Academy earned by Charles Pineda.',
+  ogType: 'website',
+})
+
 const certs = [
   {
     id: 'python',
@@ -36,7 +46,7 @@ function onKeydown(e) {
   if (e.key === 'Escape') closeCert()
 }
 
-// Lock page scroll while the modal is open (what Bootstrap's modal did)
+
 watch(selectedCert, (cert) => {
   document.body.classList.toggle('modal-open', !!cert)
 })

@@ -1,7 +1,16 @@
 <script setup>
-useHead({ title: 'Tech Stack | Portfolio' })
+import { useSeoMeta } from '#imports'
 
-// Images in public/images are served from /images.
+useSeoMeta({
+  title: 'Tech Stack - Charles Pineda | IT Portfolio',
+  description: 'Explore the programming languages, frameworks, databases, and developer tools used by Charles Pineda in software engineering and web development projects.',
+  
+  ogTitle: 'Tech Stack & Skills - Charles Pineda | Portfolio',
+  ogDescription: 'Discover the languages (HTML, CSS, JavaScript, Java, MySQL, PostgreSQL) and tools (Git, GitHub, VS Code) in Charles Pineda\'s developer toolkit.',
+  ogType: 'website',
+})
+
+
 const languages = [
   { name: 'HTML', icon: '/images/htmllll.webp' },
   { name: 'CSS', icon: '/images/css-3.svg' },
@@ -17,8 +26,6 @@ const tools = [
   { name: 'VS Code', icon: '/images/vscode.png' },
 ]
 
-// TODO: your old main.js (Anime.js / SweetAlert2 logic) was not included,
-// so its behavior isn't ported yet. Call it from here, e.g.:
 function onItemClick(tech) {
   // showTechAlert(tech.name)
 }

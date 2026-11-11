@@ -17,7 +17,7 @@ watch(() => route.path, () => {
 <template>
   <nav class="navbar navbar-expand-md fixed-top custom-nav">
     <div class="container-fluid px-3">
-      <NuxtLink class="navbar-brand" to="/">Portfolio</NuxtLink>
+      <NuxtLink class="navbar-brand" to="/">Charles Pineda</NuxtLink>
 
       <button
         class="navbar-toggler"
