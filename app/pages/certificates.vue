@@ -18,7 +18,7 @@ const certs = [
     issuer: 'Cisco Networking Academy',
     badge: '/images/pythonbadge.png',
     badgeAlt: 'Python Essentials 1 badge icon',
-    certificate: '/images/pythoncert.png',
+    certificate: '/images/pythoncertif.png',
     certificateAlt: 'Python Certificate',
   },
   {

@@ -1,8 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useSeoMeta } from '#imports' 
-import profilePhoto from '@/assets/dsadds.jpg'
-
+const profilePhoto = '/images/dsadds.jpg'
 useSeoMeta({
   title: 'Home - Charles Pineda | IT Portfolio',
   description: 'Portfolio of Charles Pineda, a passionate 2nd year IT student with a strong foundation in web development and software engineering.',
