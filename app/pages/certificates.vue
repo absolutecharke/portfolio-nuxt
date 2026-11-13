@@ -66,16 +66,18 @@ onBeforeUnmount(() => {
       <a
         v-for="cert in certs"
         :key="cert.id"
-        class="cert-card"
+        class="card portfolio-card cert-card"
         href="#"
         @click.prevent="openCert(cert)"
       >
-        <div class="cert-badge">
-          <img :src="cert.badge" :alt="cert.badgeAlt" class="badge-img" />
-        </div>
-        <div class="cert-info">
-          <h3>{{ cert.title }}</h3>
-          <p>{{ cert.issuer }}</p>
+        <div class="card-body cert-card-body">
+          <div class="cert-badge">
+            <img :src="cert.badge" :alt="cert.badgeAlt" class="badge-img" />
+          </div>
+          <div class="cert-info">
+            <h3>{{ cert.title }}</h3>
+            <p>{{ cert.issuer }}</p>
+          </div>
         </div>
       </a>
     </div>
@@ -91,7 +93,7 @@ onBeforeUnmount(() => {
         aria-modal="true"
         @click.self="closeCert"
       >
-        <div class="modal-box certificate-modal-content">
+        <div class="modal-box card certificate-modal-content">
           <div class="certificate-modal-header">
             <button
               type="button"

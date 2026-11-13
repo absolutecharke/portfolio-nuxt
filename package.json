@@ -3,10 +3,11 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt dev",
+    "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "lint": "nuxi typecheck",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
@@ -17,6 +18,8 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.5",
     "daisyui": "^5.7.50",
-    "tailwindcss": "^4.3.5"
+    "tailwindcss": "^4.3.5",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.14"
   }
 }

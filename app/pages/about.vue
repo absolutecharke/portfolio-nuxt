@@ -15,19 +15,21 @@ useSeoMeta({
   <div class="page active">
     <div class="section-title">About me</div>
 
-    <div class="highlight-grid">
-      <h3>Who I am</h3>
-      <p>
-        "I'm Charles Pineda, an IT student passionate about building a future in the IT industry.
-        I specialize in surface-level database coding and enjoy creating projects that are both
-        fun and engaging. Outside of technology, I spend my time reading comics, collecting
-        action figures, playing instruments, running, and staying active at the gym, which
-        helps me stay creative, disciplined, and motivated."
-      </p>
+    <div class="card portfolio-card highlight-grid">
+      <div class="card-body portfolio-card-body">
+        <h3>Who I am</h3>
+        <p>
+          "I'm Charles Pineda, an IT student passionate about building a future in the IT industry.
+          I specialize in surface-level database coding and enjoy creating projects that are both
+          fun and engaging. Outside of technology, I spend my time reading comics, collecting
+          action figures, playing instruments, running, and staying active at the gym, which
+          helps me stay creative, disciplined, and motivated."
+        </p>
+      </div>
     </div>
 
-    <div class="highlight-grid">
-      <div class="highlight-card">
+    <div class="card portfolio-card highlight-grid">
+      <div class="card-body portfolio-card-body">
         <h3>My Aspirations</h3>
         <p>
           "I aspire to have a position in IT department professions I want to professionalize in
