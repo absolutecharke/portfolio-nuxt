@@ -5,9 +5,9 @@ import { useSeoMeta } from '#imports'
 useSeoMeta({
   title: 'Certifications - Charles Pineda | IT Portfolio',
   description: 'View professional certifications earned by Charles Pineda, including Python Essentials and Networking Basics from Cisco Networking Academy.',
-  
   ogTitle: 'Professional Certifications - Charles Pineda | Portfolio',
   ogDescription: 'Explore verified IT certifications from Cisco Networking Academy earned by Charles Pineda.',
+  ogImage: '/images/certificate-preview.png',
   ogType: 'website',
 })
 
